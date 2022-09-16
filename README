@@ -1,0 +1,16 @@
+# John The Ripper "Jumbo" Alpine Image
+
+This package is intended to be a smaller version of [phocean/john_the_ripper_jumbo](https://hub.docker.com/r/phocean/john_the_ripper_jumbo).
+
+## Usage
+```shell
+# docker run -it --rm -v $(pwd):/hashes:ro rmeno12/john-the-ripper
+```
+Then, inside the container you can run `john`:
+```console
+/ # john /hashes/hashes.txt
+/ # john --show /hashes/hashes.txt
+```
+
+More extended instructions (including transferring configuration and pot files) can be found with [phocean/john_the_ripper_jumbo](https://hub.docker.com/r/phocean/john_the_ripper_jumbo).
+
